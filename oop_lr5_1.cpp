@@ -21,7 +21,7 @@ public:
     void setYear(int newYear) {
         year = newYear;
     }
-    // Оператор порівняння за назвою книги
+    // ГЋГЇГҐГ°Г ГІГ®Г° ГЇГ®Г°ВіГўГ­ГїГ­Г­Гї Г§Г  Г­Г Г§ГўГ®Гѕ ГЄГ­ГЁГЈГЁ
     bool operator<(const Book& other) const {
         return title < other.title;
     }
@@ -70,7 +70,7 @@ int main() {
         cout << "Continue? (1) - yes, (0) - no: ";
         cin >> flag;
     } while (!flag);
-    // Використовуємо std::sort для сортування за назвою книги
+    // Г‚ГЁГЄГ®Г°ГЁГ±ГІГ®ГўГіВєГ¬Г® std::sort Г¤Г«Гї Г±Г®Г°ГІГіГўГ Г­Г­Гї Г§Г  Г­Г Г§ГўГ®Гѕ ГЄГ­ГЁГЈГЁ
     std::sort(library.begin(), library.end());
 
     std::cout << "\nLibrary after sorting:" << std::endl;
